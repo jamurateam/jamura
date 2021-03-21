@@ -1,0 +1,7 @@
+<section class="bannerSection">
+  <owl-carousel-o [options]="customOptions">
+    <ng-template carouselSlide *ngFor="let image of images">
+     <img src="{{image}}" alt="Banner Image" title="Banner Image">
+    </ng-template>
+  </owl-carousel-o>
+</section>

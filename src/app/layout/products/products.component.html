@@ -1,0 +1,22 @@
+<section class="ProductsComponent">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+      <div class="productsTitle">
+        Our Products
+      </div>
+      <div class="productsWrap">
+        <owl-carousel-o [options]="customOptions">
+          <ng-template carouselSlide *ngFor="let i of images">
+            <div class="products-box">
+              <img  src="{{i.image}}" alt="Banner Image" title="Banner Image">
+            </div>
+
+          </ng-template>
+        </owl-carousel-o>
+      </div>
+
+      </div>
+    </div>
+  </div>
+</section>
